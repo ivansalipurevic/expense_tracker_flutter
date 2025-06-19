@@ -4,9 +4,11 @@ import 'package:expense_tracker/expenses.dart';
 void main() {
   runApp(
     MaterialApp(
-      theme: ThemeData(useMaterial3: true),
+      theme: ThemeData().copyWith(
+        useMaterial3: true,
+        scaffoldBackgroundColor: Color.fromARGB(255, 220, 189, 252),
+      ),
       home: const Expenses(),
-
     ),
 
   );
